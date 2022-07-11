@@ -5,12 +5,12 @@
 A simple mobile application that:
 
 * Utilize a weather API (http://openweathermap.org/API) and get the forecast based on City
-  [Note: Now city is hardcode in AppConstants.kt file]
+  [Note: Now city is hardcoded in AppConstants.kt file]
 * The WeatherInfo activity will have the below forecast information
-     City name
-     Temperature
-     Minimum Temperature
-     Maximum Temperature
+     City name,
+     Temperature,
+     Minimum Temperature,
+     Maximum Temperature,
      Weather type      
 
 ## API Key
@@ -32,7 +32,7 @@ I would like to have completed
  * Base components (Like BaseActivity,BaseViewModel,BaseRepository...)
    [We have only one Activity so i didn't add that]
  
-Note: Added one testcase in unit-testing part to verify whether API is working or not. 
+Note: Added one testcase in unit-testing part to verify whether API is working or not.[Attached screenshot] 
 
 
 ### Screenshots
