@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Weather Report</string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="temp">%d°</string>
+    <string name="min_high">L:%d°  H:%d°</string>
+    <string name="no_network_message">Check if you are actually connected to the internet. ...</string>
+    <string name="service_not_available">Service not available.</string>
+
+</resources>
