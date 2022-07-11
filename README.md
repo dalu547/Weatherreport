@@ -35,3 +35,12 @@ I would like to have completed
 Note: Added one testcase in unit-testing part to verify whether API is working or not. 
 
 
+### Screenshots
+
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/10658016/178327576-17f19818-f5bf-43e0-9075-f8b65ad52e3a.png" width="200" />
+  <img src="https://user-images.githubusercontent.com/10658016/178327713-5e87f44a-b0f0-4cee-b5d1-d510818e62a8.png" width="200" />
+  <img src="https://user-images.githubusercontent.com/10658016/178327725-8c219393-6b98-479d-a8ef-364e1cf8108f.png" width="200" />
+  <img src="https://user-images.githubusercontent.com/10658016/178327731-faa
+
+
