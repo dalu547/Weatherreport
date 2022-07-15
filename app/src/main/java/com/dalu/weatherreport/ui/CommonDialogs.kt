@@ -14,4 +14,7 @@ object CommonDialogs {
                 dialog.dismiss()
             }.show()
     }
+    fun toastMessage(){
+        
+    }
 }
