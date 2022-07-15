@@ -15,6 +15,6 @@ object CommonDialogs {
             }.show()
     }
     fun toastMessage(){
-        
+
     }
 }
