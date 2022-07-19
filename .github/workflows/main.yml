@@ -43,7 +43,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: app
-          path: app/build/outputs/apk/debug/app-debug.apk
+#          path: app/build/outputs/apk/debug/app-debug.apk
+          path: app/build/outputs/bundle/debug/app-debug.aab
 
 #      - name: Download  a Build Artifact
 #        uses: actions/download-artifact@v3
@@ -58,7 +59,9 @@ jobs:
           token: ${{ secrets.FIREBASE_TOKEN }}
           groups: AndroidDev
           releaseNotes: "CI/CD Testing"
-          file: app/build/outputs/apk/debug/app-debug.apk
+#          file: app/build/outputs/apk/debug/app-debug.apk
+          file: app/build/outputs/bundle/debug/app-debug.aab
+
 
       # Runs a single command using the runners shell
 #      - name: Run a one-line script
