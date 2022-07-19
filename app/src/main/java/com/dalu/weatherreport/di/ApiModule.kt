@@ -18,6 +18,7 @@ class ApiModule {
     @Provides
     fun getRetrofit(): Retrofit {
 
+        //Logging interceptor
         val logging = HttpLoggingInterceptor()
         logging.setLevel(HttpLoggingInterceptor.Level.BODY)
 
