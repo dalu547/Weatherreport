@@ -39,15 +39,14 @@ jobs:
       - name: Build Gradle
         run: ./gradlew build
 
-      - name: Build Release AAB
-        id: buildRelease
-        run: ./gradlew aap:bundleRelease
+#      - name: Build Release AAB
+#        id: buildRelease
+#        run: ./gradlew bundleDebug
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3
         with:
           name: app
-#          path: app/build/outputs/apk/debug/app-debug.apk
           path: app/build/outputs/bundle/debug/app-debug.aab
 
 #      - name: Download  a Build Artifact
@@ -63,7 +62,6 @@ jobs:
           token: ${{ secrets.FIREBASE_TOKEN }}
           groups: AndroidDev
           releaseNotes: "CI/CD Testing"
-#          file: app/build/outputs/apk/debug/app-debug.apk
           file: app/build/outputs/bundle/debug/app-debug.aab
 
 
