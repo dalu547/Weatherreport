@@ -39,6 +39,10 @@ jobs:
       - name: Build Gradle
         run: ./gradlew build
 
+      - name: Build Release AAB
+        id: buildRelease
+        run: ./gradlew bundleRelease
+
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3
         with:
@@ -65,7 +69,7 @@ jobs:
 
   deploy-play-store:
     name: Upload build to playstore
-
+    needs: [deploy-firebase]
     runs-on: ubuntu-latest
 
     steps:
