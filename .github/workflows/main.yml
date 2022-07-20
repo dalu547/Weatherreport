@@ -41,7 +41,7 @@ jobs:
 
       - name: Build Release AAB
         id: buildRelease
-        run: ./gradlew bundleRelease
+        run: ./gradlew aap:bundleRelease
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3
