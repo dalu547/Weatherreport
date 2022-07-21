@@ -6,7 +6,7 @@ name: Prepare build and upload to firebase
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: [ "master" ]
+    branches: [ "master"]
   pull_request:
     branches: [ "master" ]
 
@@ -39,7 +39,7 @@ jobs:
       - name: Build Gradle
         run: ./gradlew build
 
-#      - name: Build Release AAB
+#      - name: Build Debug AAB
 #        id: buildRelease
 #        run: ./gradlew bundleDebug
 
@@ -47,7 +47,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: app
-          path: app/build/outputs/bundle/debug/app-debug.aab
+          path: app/build/outputs/apk/debug/app-debug.apk
 
 #      - name: Download  a Build Artifact
 #        uses: actions/download-artifact@v3
@@ -62,7 +62,7 @@ jobs:
           token: ${{ secrets.FIREBASE_TOKEN }}
           groups: AndroidDev
           releaseNotes: "CI/CD Testing"
-          file: app/build/outputs/bundle/debug/app-debug.aab
+          file: app/build/outputs/apk/debug/app-debug.apk
 
 
   deploy-play-store:
