@@ -9,4 +9,6 @@ object AppConstants {
     const val WEATHER_API_IMAGE_ENDPOINT = "https://openweathermap.org/img/wn/"
     const val WEATHER_API_CITY = "Hyderabad"
 
+    //Add bitrise CI/CD setup.
+
 }
